@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.invoice {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width: 150px;
+  height: auto;
+}
+.logo-img{
+  height: 225px;
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.invoice-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 0;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.seller-details,
+.buyer-details {
+  width: 48%;
+  font-size: 14px;
+}
+
+.order-info {
+  text-align: right;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+.total-row th,
+.total-row td {
+  font-weight: bold;
+  text-align: right;
+}
+
+.amount-in-words {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.signature {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.signature img {
+  max-width: 150px;
+  height: auto;
+  display: block;
 }
